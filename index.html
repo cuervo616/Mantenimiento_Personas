@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/presentacion.css">
+    <link rel="stylesheet" href="./css/personas.css">
+    <title>Administración de Personas</title>
+</head>
+<body>
+    <header>
+        <h1>Adminstración de Usuarios</h1>
+    </header>
+    <main>
+        <details>
+            <summary>Ingresar/Editar Usuario</summary>
+            <form class="add-user">
+                <label for="id_user">ID:<input type="number" id="id_user" class="input_form" min="1" max="100" required></label><br>
+                <label for="nom_user">Nombre:<input type="text" id="nom_user" class="input_form"></label><br>
+                <label for="ape_user">Apellido:<input type="text" id="ape_user" class="input_form"></label><br>
+                <select name="pais" id="pais_user" class="input_form">
+                    <option value="0">Seleccionar País</option>
+                    <option value="1">Ecuador</option>
+                    <option value="2">Colombia</option>
+                    <option value="3">Perú</option>
+                </select>
+                <select name="ciudad" id="ciudad_user" class="input_form">
+                    <option value="0">Seleccionar Ciudad</option>
+                </select><br>
+                <button type="button" id="btnAdd_new_user">Ingresar/Editar</button>
+                <button type="button" id="btnlimpiar_datos">Limpiar</button>
+            </form>
+        </details>
+        <div>
+            <h3>Ingrese el ID para eliminar</h3>
+            <label for="dele_user">ID: <input type="number" min="1" max="100" class="delete_form" id="input_delete"></label>
+            <button type="button" id="btndelete_user">Eliminar</button>
+        </div>
+        <div class="container-tabla">
+            <h2>Local Storange</h2>
+            <table class="tabla" id="local">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Ciudad</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="container-tabla">
+            <h2>Session Storange</h2>
+            <table class="tabla" id="session">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Ciudad</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./js/ciudades.js"></script>
+    <script src="./js/personas.js"></script>
+</body>
+</html>

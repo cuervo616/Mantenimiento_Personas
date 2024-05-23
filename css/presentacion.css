@@ -1,0 +1,122 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+header{
+    border-bottom: 5px black solid;
+    padding: 2%;
+    color: white;
+    background: linear-gradient(190deg,rgba(120, 120, 189),black);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg,rgba(13, 21, 119, 0.8),rgba(223, 224, 244, 0.8));
+    padding: 2%;
+}
+
+/*Estilos de tabla*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th,td{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1x solid #ddd;
+    color: black;
+}
+
+th{
+    color: black;
+    font-weight: 800;
+}
+
+tr:hover{
+    background-color: #ccdff2;
+}
+
+.container-tabla {
+    margin-top: 2%;
+    overflow-x: auto;
+    background-color: aliceblue;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 2%;
+    padding-right: 2px;
+}
+/*--------------------------------------------------*/
+/*Estilos de formulario*/
+
+details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-user label {
+    margin-bottom: 10px;
+}
+
+.input_form, .delete_form {
+    width: 15%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 1%;
+}
+
+
+button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btnlimpiar_datos{
+    background-color: #f4b136;
+}
+#btndelete_user{
+    background-color: #f44336;;
+}
+
+.delete_form, #btndelete_user,#id_user{
+    width: 10%;
+}
+

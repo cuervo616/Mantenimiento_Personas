@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "pais": "Ecuador",
+        "ciudad": "Cuenca"
+    },
+    {
+        "id": 2,
+        "nombre": "María",
+        "apellido": "González",
+        "pais": "Perú",
+        "ciudad": "Lima"
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos",
+        "apellido": "Martínez",
+        "pais": "Colombia",
+        "ciudad": "Bogotá"
+    },
+    {
+        "id": 4,
+        "nombre": "Ana",
+        "apellido": "López",
+        "pais": "Ecuador",
+        "ciudad": "Quito"
+    },
+    {
+        "id": 5,
+        "nombre": "Luis",
+        "apellido": "García",
+        "pais": "Perú",
+        "ciudad": "Cusco"
+    }
+]
